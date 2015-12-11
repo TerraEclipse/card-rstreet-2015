@@ -1,0 +1,333 @@
+body {
+  width: 800px;
+  height: 400px;
+  /*get fonts*/
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body.hostile {
+  background: url(./images/hostile.jpg) top left no-repeat;
+  color: rgb( 220, 44, 1 );
+}
+body.help {
+  background: url(./images/help.jpg) top left no-repeat;
+  color: rgb(0, 0, 0);
+}
+body.thanks {
+  background: url(./images/thanks.jpg) top left no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  position: relative;
+  width: 800px;
+  height: 400px;
+}
+
+.hostile .legislator-image {
+  position: absolute;
+  right: 0;
+  width: 320px;
+  height: 100%;
+}
+.help .legislator-image,
+.thanks .legislator-image {
+  position: absolute;
+  left: 0;
+  width: 320px;
+  height: 100%;
+}
+
+.hostile .legislator-image .image-wrapper {
+  position: absolute;
+  background: url(./images/hostile_legislator.png) top left no-repeat;
+  background-color: rgb( 220, 44, 1 );
+  border: 3px solid rgb( 255, 255, 255 );
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(5deg);
+  left: 30px;
+  top: 30px;
+  width: 264px;
+  height: 294px;
+}
+.help .legislator-image .image-wrapper {
+  position: absolute;
+  background: url(./images/help_legislator.png) top left no-repeat;
+  background-color: rgb( 255, 197, 0 );
+  border: 3px solid rgb( 0, 0, 0 ) ;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rrgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  left: 30px;
+  top: 30px;
+  width: 264px;
+  height: 294px;
+}
+.thanks .legislator-image .image-wrapper {
+  position: absolute;
+  background: url(./images/thanks_legislator.png) top left no-repeat;
+  background-color: rgb( 19, 100, 49 );
+  border: 3px solid rgb( 255, 255, 255 ) ;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  left: 30px;
+  top: 30px;
+  width: 264px;
+  height: 294px;
+}
+
+.image-wrapper img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.hostile .legislator-image .image-overlay {
+  position: absolute;
+  background: url(./images/hostile_gradesign.png) top left no-repeat;
+  width: 217px;
+  height: 206px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.help .legislator-image .image-overlay {
+  position: absolute;
+  background: url(./images/help_gradesign.png) top left no-repeat;
+  width: 199px;
+  height: 192px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.thanks .legislator-image .image-overlay {
+  position: absolute;
+  background: url(./images/thanks_gradesign.png) top left no-repeat;
+  width: 199px;
+  height: 192px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.hostile .image-overlay img.grade {
+  position: absolute;
+  bottom: 17px;
+  left: 0px;
+  right: 0px;
+  margin-left: 75px;
+}
+.help .image-overlay img.grade {
+  position: absolute;
+  bottom: 17px;
+  left: 0px;
+  right: 0px;
+  margin: 0 40px 0 25px;
+}
+.thanks .image-overlay img.grade {
+  position: absolute;
+  bottom: 17px;
+  left: 0px;
+  right: 0px;
+  margin-left: 20px;
+}
+
+.hostile .content-wrapper {
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 100%;
+  left: 0;
+}
+.help .content-wrapper,
+.thanks .content-wrapper {
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 100%;
+  right: 0;
+}
+
+.content {
+  position: relative;
+  margin: 0 30px;
+  height: 350px;
+  width: 430px;
+}
+
+.dear {
+  position: absolute;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 100%;
+  top: 42px;
+}
+
+.hostile .map-pin {
+  position: absolute;
+  font-family: "proxima-nova", Arial;
+  font-weight: 800;
+  font-size: 39px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+  top: 92px;
+  left: 370px;
+
+}
+.help .map-pin {
+  position: absolute;
+  font-family: "proxima-nova", Arial;
+  font-weight: 800;
+  font-size: 39px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+  top: 94px;
+  left: 368px;
+}
+.thanks .map-pin {
+  position: fixed;
+  font-family: "proxima-nova", Arial;
+  font-weight: 800;
+  font-size: 34px;
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+  top: 207px;
+  left: 502px;
+}
+
+.city-state {
+  position: absolute;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 100%;
+  top: 154px;
+}
+
+.user-info-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 252px;
+}
+
+.user-info {
+  margin-left: 36px;
+}
+
+.hostile .avatar {
+  position: absolute;
+  background: url(./images/hostile_avatar.png) top left no-repeat;
+  background-color: rgb( 220, 44, 1 );
+  border: 3px solid rgb( 255, 255, 255 );
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  -ms-transform: rotate(5.5deg);
+  -webkit-transform: rotate(5.5deg);
+  transform: rotate(-5.5deg);
+  height: 75px;
+  width:75px;
+}
+.help .avatar {
+  position: absolute;
+  background: url(./images/help_avatar.png) top left no-repeat;
+  background-color: rgb( 255, 197, 0 );
+  border: 3px solid rgb( 0, 0, 0 );
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  height: 75px;
+  width:75px;
+}
+.thanks .avatar {
+  position: absolute;
+  background: url(./images/thanks_avatar.png) top left no-repeat;
+  background-color: rgb( 19, 100, 49 );
+  border: 3px solid rgb( 255, 255, 255 );
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  height: 75px;
+  width:75px;
+}
+
+.avatar-wrapper {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+}
+
+.avatar-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.signature {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  color: white;
+  margin-left: 100px;
+  margin-top: 23px;
+}
+
+.signature-name {
+  font-family: "proxima-nova", Arial;
+  font-weight: 800;
+  font-size: 21px;
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+}
+
+.signature-city-state {
+  font-family: "proxima-nova", Arial;
+  font-weight: 400;
+  font-size: 16px;
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+}
+
+.hostile .sitelink-text {
+  position: absolute;
+  font-family: "proxima-nova", Arial;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+  text-transform: uppercase;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 11px;
+  margin-left: 35px;
+  letter-spacing: 2.5px;
+}
+.help .sitelink-text,
+.thanks .sitelink-text {
+  position: absolute;
+  font-family: "proxima-nova", Arial;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: 1px 2px rgba( 0, 0, 0, 0.2);
+  text-transform: uppercase;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 11px;
+  margin-right: 35px;
+  letter-spacing: 2.5px;
+}

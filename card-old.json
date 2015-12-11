@@ -1,0 +1,776 @@
+{
+  "title": "R Street",
+  "description": "R Street Camaign",
+  "typekit": true,
+  "sizes": {
+    "twitter": {
+      "width": 800,
+      "height": 400,
+      "default": true
+    }
+  },
+  "typekit": false,
+  "styles": [
+    "./styles.less"
+  ],
+  "variables": {
+    "first": "Your",
+    "last": "Name",
+    "city": "City",
+    "state": "State",
+    "state_full": "State",
+    "avatar": ""
+  },
+  "variants": {
+    "phoenix": {
+      "variables": {
+        "variant_city": "Phoenix",
+        "variant_state": "AZ",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Greg Stanton",
+          "last": "Stanton",
+          "twitter": "MayorStanton",
+          "image": "/images/stanton.jpg"
+        }
+      }
+    },
+    "tucson": {
+      "variables": {
+        "variant_city": "Tucson",
+        "variant_state": "AZ",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Jonathan Rothschild",
+          "last": "Rothschild",
+          "twitter": "JRothschildAZ",
+          "image": "/images/rothschild.jpg"
+        }
+      }
+    },
+    "mesa": {
+      "variables": {
+        "variant_city": "Mesa",
+        "variant_state": "AZ",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Scott Smith",
+          "last": "Smith",
+          "twitter": "Mayor_Smith",
+          "image": "/images/smith.jpg"
+        }
+      }
+    },
+    "los_angeles": {
+      "variables": {
+        "variant_city": "Los Angeles",
+        "variant_state": "CA",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Jerry Brown",
+          "last": "Brown",
+          "twitter": "JerryBrownGov",
+          "image": "/images/brown.jpg"
+        }
+      }
+    },
+    "san_diego": {
+      "variables": {
+        "variant_city": "San Diego",
+        "variant_state": "CA",
+        "grade": "B-",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Kevin Faulconer",
+          "last": "Faulconer",
+          "twitter": "kevin_faulconer",
+          "image": "/images/faulconer.jpg"
+        }
+      }
+    },
+    "san_jose": {
+      "variables": {
+        "variant_city": "San Jose",
+        "variant_state": "CA",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Jerry Brown",
+          "last": "Brown",
+          "twitter": "JerryBrownGov",
+          "image": "/images/brown.jpg"
+        }
+      }
+    },
+    "san_francisco": {
+      "variables": {
+        "variant_city": "San Francisco",
+        "variant_state": "CA",
+        "grade": "B-",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Edwin M. Lee",
+          "last": "Lee",
+          "twitter": "mayoredlee",
+          "image": "/images/lee.jpg"
+        }
+      }
+    },
+    "fresno": {
+      "variables": {
+        "variant_city": "Fresno",
+        "variant_state": "CA",
+        "grade": "A",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Ashley Swearengin",
+          "last": "Swearengin",
+          "twitter": "MayorSwearengin",
+          "image": "/images/swearengin.jpg"
+        }
+      }
+    },
+    "sacramento": {
+      "variables": {
+        "variant_city": "Sacramento",
+        "variant_state": "CA",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Jerry Brown",
+          "last": "Brown",
+          "twitter": "JerryBrownGov",
+          "image": "/images/brown.jpg"
+        }
+      }
+    },
+    "long_beach": {
+      "variables": {
+        "variant_city": "Long Beach",
+        "variant_state": "CA",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Jerry Brown",
+          "last": "Brown",
+          "twitter": "JerryBrownGov",
+          "image": "/images/brown.jpg"
+        }
+      }
+    },
+    "oakland": {
+      "variables": {
+        "variant_city": "Oakland",
+        "variant_state": "CA",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Jerry Brown",
+          "last": "Brown",
+          "twitter": "JerryBrownGov",
+          "image": "/images/brown.jpg"
+        }
+      }
+    },
+    "denver": {
+      "variables": {
+        "variant_city": "Denver",
+        "variant_state": "CO",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "John Hickenlooper",
+          "last": "Hickenlooper",
+          "twitter": "hickforco",
+          "image": "/images/hickenlooper.jpg"
+        }
+      }
+    },
+    "colorado_springs": {
+      "variables": {
+        "variant_city": "Colorado Springs",
+        "variant_state": "CO",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "John Hickenlooper",
+          "last": "Hickenlooper",
+          "twitter": "hickforco",
+          "image": "/images/hickenlooper.jpg"
+        }
+      }
+    },
+    "washington": {
+      "variables": {
+        "variant_city": "Washington",
+        "variant_state": "DC",
+        "grade": "A",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Vincent Gray",
+          "last": "Gray",
+          "twitter": "mayorvincegray",
+          "image": "/images/gray.jpg"
+        }
+      }
+    },
+    "jacksonville": {
+      "variables": {
+        "variant_city": "Jacksonville",
+        "variant_state": "FL",
+        "grade": "B-",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Alvin Brown",
+          "last": "Brown",
+          "twitter": "MayorAlvinBrown",
+          "image": "/images/a_brown.jpg"
+        }
+      }
+    },
+    "miami": {
+      "variables": {
+        "variant_city": "Miami",
+        "variant_state": "FL",
+        "grade": "D",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Tomás Pedro Regalado",
+          "last": "Regalado",
+          "twitter": "Tomas_Regalado",
+          "image": "/images/regalado.jpg"
+        }
+      }
+    },
+    "orlando": {
+      "variables": {
+        "variant_city": "Orlando",
+        "variant_state": "FL",
+        "grade": "C-",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Buddy Dyer",
+          "last": "Dyer",
+          "twitter": "citybeautiful",
+          "image": "/images/dyer.jpg"
+        }
+      }
+    },
+    "atlanta": {
+      "variables": {
+        "variant_city": "Atlanta",
+        "variant_state": "GA",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Kasim Reed",
+          "last": "Reed",
+          "twitter": "KasimReed",
+          "image": "/images/reed.jpg"
+        }
+      }
+    },
+    "chicago": {
+      "variables": {
+        "variant_city": "Chicago",
+        "variant_state": "IL",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Rahm Emanuel",
+          "last": "Emanuel",
+          "twitter": "RahmEmanuel",
+          "image": "/images/emanuel.jpg"
+        }
+      }
+    },
+    "indianapolis": {
+      "variables": {
+        "variant_city": "Indianapolis",
+        "variant_state": "IN",
+        "grade": "B+",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Greg Ballard",
+          "last": "Ballard",
+          "twitter": "MayorBallard",
+          "image": "/images/ballard.jpg"
+        }
+      }
+    },
+    "louisville": {
+      "variables": {
+        "variant_city": "Louisville",
+        "variant_state": "KY",
+        "grade": "B+",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Greg Fischer",
+          "last": "Fischer",
+          "twitter": "louisvillemayor",
+          "image": "/images/fischer.jpg"
+        }
+      }
+    },
+    "new_orleans": {
+      "variables": {
+        "variant_city": "New Orleans",
+        "variant_state": "LA",
+        "grade": "F",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Mitch Landrieu",
+          "last": "Landrieu",
+          "twitter": "MayorLandrieu",
+          "image": "/images/landrieu.jpg"
+        }
+      }
+    },
+    "boston": {
+      "variables": {
+        "variant_city": "Boston",
+        "variant_state": "MA",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Marty Walsh",
+          "last": "Walsh",
+          "twitter": "marty_walsh",
+          "image": "/images/walsh.jpg"
+        }
+      }
+    },
+    "baltimore": {
+      "variables": {
+        "variant_city": "Baltimore",
+        "variant_state": "MD",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Stephanie Rawlings-Blake",
+          "last": "Rawlings-Blake",
+          "twitter": "MayorSRB",
+          "image": "/images/rawlings_blake.jpg"
+        }
+      }
+    },
+    "detroit": {
+      "variables": {
+        "variant_city": "Detroit",
+        "variant_state": "MI",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Mike Duggan",
+          "last": "Duggan",
+          "twitter": "MayorMikeDuggan",
+          "image": "/images/duggan.jpg"
+        }
+      }
+    },
+    "minneapolis": {
+      "variables": {
+        "variant_city": "Minneapolis",
+        "variant_state": "MN",
+        "grade": "A",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Betsy Hodges",
+          "last": "Hodges",
+          "twitter": "MayorHodges",
+          "image": "/images/hodges.jpg"
+        }
+      }
+    },
+    "kansas_city": {
+      "variables": {
+        "variant_city": "Kansas City",
+        "variant_state": "MO",
+        "grade": "D-",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Sly James",
+          "last": "James",
+          "twitter": "MayorSlyJames",
+          "image": "/images/james.jpg"
+        }
+      }
+    },
+    "charlotte": {
+      "variables": {
+        "variant_city": "Charlotte",
+        "variant_state": "NC",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Dan Clodfelter",
+          "last": "Clodfelter",
+          "twitter": "CLTMayor",
+          "image": "/images/clodfelter.jpg"
+        }
+      }
+    },
+    "raleigh": {
+      "variables": {
+        "variant_city": "Raleigh",
+        "variant_state": "NC",
+        "grade": "B+",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Nancy McFarlane",
+          "last": "McFarlane",
+          "twitter": "NancyMcFarlane",
+          "image": "/images/mcfarlane.jpg"
+        }
+      }
+    },
+    "omaha": {
+      "variables": {
+        "variant_city": "Omaha",
+        "variant_state": "NE",
+        "grade": "D+",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Jean Stothert",
+          "last": "Stothert",
+          "twitter": "Jean_Stothert",
+          "image": "/images/stothert.jpg"
+        }
+      }
+    },
+    "albuquerque": {
+      "variables": {
+        "variant_city": "Albuquerque",
+        "variant_state": "NM",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Richard J. Berry",
+          "last": "Berry",
+          "twitter": "MayorRJBerry",
+          "image": "/images/berry.jpg"
+        }
+      }
+    },
+    "las_vegas": {
+      "variables": {
+        "variant_city": "Las Vegas",
+        "variant_state": "NV",
+        "grade": "F",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Carolyn Goodman",
+          "last": "Goodman",
+          "twitter": "mayoroflasvegas",
+          "image": "/images/goodman.jpg"
+        }
+      }
+    },
+    "new_york": {
+      "variables": {
+        "variant_city": "New York",
+        "variant_state": "NY",
+        "grade": "D+",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Bill De Blasio",
+          "last": "Blasio",
+          "twitter": "BilldeBlasio",
+          "image": "/images/blasio.jpg"
+        }
+      }
+    },
+    "columbus": {
+      "variables": {
+        "variant_city": "Columbus",
+        "variant_state": "OH",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Michael B. Coleman",
+          "last": "Coleman",
+          "twitter": "MichaelBColeman",
+          "image": "/images/coleman.jpg"
+        }
+      }
+    },
+    "cleveland": {
+      "variables": {
+        "variant_city": "Cleveland",
+        "variant_state": "OH",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Frank G. Jackson",
+          "last": "Jackson",
+          "twitter": "CityofCleveland",
+          "image": "/images/jackson.jpg"
+        }
+      }
+    },
+    "oklahoma_city": {
+      "variables": {
+        "variant_city": "Oklahoma City",
+        "variant_state": "OK",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Mick Cornett",
+          "last": "Cornett",
+          "twitter": "MickCornett",
+          "image": "/images/cornett.jpg"
+        }
+      }
+    },
+    "tulsa": {
+      "variables": {
+        "variant_city": "Tulsa",
+        "variant_state": "OK",
+        "grade": "D+",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Dewey F. Bartlett, Jr.",
+          "last": "Bartlett",
+          "twitter": "MayorTulsa",
+          "image": "/images/bartlett.jpg"
+        }
+      }
+    },
+    "portland": {
+      "variables": {
+        "variant_city": "Portland",
+        "variant_state": "OR",
+        "grade": "F",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Charlie Hales",
+          "last": "Hales",
+          "twitter": "MayorPDX",
+          "image": "/images/hales.jpg"
+        }
+      }
+    },
+    "philadelphia": {
+      "variables": {
+        "variant_city": "Philadelphia",
+        "variant_state": "PA",
+        "grade": "D-",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Michael Nutter",
+          "last": "Nutter",
+          "twitter": "Michael_Nutter",
+          "image": "/images/nutter.jpg"
+        }
+      }
+    },
+    "memphis": {
+      "variables": {
+        "variant_city": "Memphis",
+        "variant_state": "TN",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "A C Wharton",
+          "last": "Wharton",
+          "twitter": "MayorACWharton",
+          "image": "/images/wharton.jpg"
+        }
+      }
+    },
+    "nashville": {
+      "variables": {
+        "variant_city": "Nashville",
+        "variant_state": "TN",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Karl Dean",
+          "last": "Dean",
+          "twitter": "reelectkarldean",
+          "image": "/images/dean.jpg"
+        }
+      }
+    },
+    "houston": {
+      "variables": {
+        "variant_city": "Houston",
+        "variant_state": "TX",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Annise Parker",
+          "last": "Parker",
+          "twitter": "AnniseParker",
+          "image": "/images/parker.jpg"
+        }
+      }
+    },
+    "san_antonio": {
+      "variables": {
+        "variant_city": "San Antonio",
+        "variant_state": "TX",
+        "grade": "D-",
+        "tone": "hostile",
+        "target": {
+          "title": "Mayor",
+          "name": "Ivy R. Taylor",
+          "last": "Taylor",
+          "twitter": "IvyRTaylor",
+          "image": "/images/taylor.jpg"
+        }
+      }
+    },
+    "dallas": {
+      "variables": {
+        "variant_city": "Dallas",
+        "variant_state": "TX",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Mike Rawlings",
+          "last": "Rawlings",
+          "twitter": "Mike_Rawlings",
+          "image": "/images/rawlings.jpg"
+        }
+      }
+    },
+    "austin": {
+      "variables": {
+        "variant_city": "Austin",
+        "variant_state": "TX",
+        "grade": "C+",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Lee Leffingwell",
+          "last": "Leffingwell",
+          "twitter": "TheLeeTeam",
+          "image": "/images/leffingwell.jpg"
+        }
+      }
+    },
+    "fort_worth": {
+      "variables": {
+        "variant_city": "Fort Worth",
+        "variant_state": "TX",
+        "grade": "B-",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Betsy Price",
+          "last": "Price",
+          "twitter": "MayorBetsyPrice",
+          "image": "/images/price.jpg"
+        }
+      }
+    },
+    "el_paso": {
+      "variables": {
+        "variant_city": "El Paso",
+        "variant_state": "TX",
+        "grade": "C",
+        "tone": "help",
+        "target": {
+          "title": "Mayor",
+          "name": "Oscar Leeser",
+          "last": "Leeser",
+          "twitter": "OscarLeeser",
+          "image": "/images/leeser.jpg"
+        }
+      }
+    },
+    "virginia_beach": {
+      "variables": {
+        "variant_city": "Virginia Beach",
+        "variant_state": "VA",
+        "grade": "B+",
+        "tone": "thanks",
+        "target": {
+          "title": "Governor",
+          "name": "Terry McAuliffe",
+          "last": "McAuliffe",
+          "twitter": "TerryMcAuliffe",
+          "image": "/images/mcauliffe.jpg"
+        }
+      }
+    },
+    "seattle": {
+      "variables": {
+        "variant_city": "Seattle",
+        "variant_state": "WA",
+        "grade": "B+",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Ed Murray",
+          "last": "Murray",
+          "twitter": "Mayor_Ed_Murray",
+          "image": "/images/murray.jpg"
+        }
+      }
+    },
+    "milwaukee": {
+      "variables": {
+        "variant_city": "Milwaukee",
+        "variant_state": "WI",
+        "grade": "B",
+        "tone": "thanks",
+        "target": {
+          "title": "Mayor",
+          "name": "Tom Barrett",
+          "last": "Barrett",
+          "twitter": "MayorOfMKE",
+          "image": "/images/barrett.jpg"
+        }
+      }
+    }
+  }
+}

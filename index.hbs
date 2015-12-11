@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{{styles}}}
+  <script type="text/javascript" src="//use.typekit.net/awu4mpx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body {{#if tone}}class="{{tone}}"{{else}}class="thanks"{{/if}}>
+  <div class="wrapper">
+    <div class="legislator-image">
+      <div class="image-wrapper">
+        {{#if variants}}
+          <img src="{{base_url}}{{target.image}}" alt="{{target.last}}">
+        {{/if}}
+      </div>
+      <div class="image-overlay">
+        {{#if grade}}
+          <img class="grade" src="{{base_url}}/images/{{grade}}.png" alt="{{grade}}">
+        {{else}}
+          <img class="grade" src="{{base_url}}/images/A+.png" alt="A+">
+        {{/if}}
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="dear">
+          {{#if target}}
+            Dear {{target.title}} {{target.last}}...
+          {{else}}
+            Dear Legislator...
+          {{/if}}
+        </div>
+        <div class="map-pin">
+          {{#if grade}}
+            {{grade}}
+          {{else}}
+            A+
+          {{/if}}
+        </div>
+        <div class="city-state">
+          {{{variant_city}}}
+          {{#if variant_state}}
+            {{#if variant_city}}
+              ,
+            {{/if}}
+          {{/if}}
+          {{#if variant_city}}
+            {{variant_state}}
+          {{else}}
+            {{state_full}}
+          {{/if}}
+        </div>
+        <div class="user-info-wrapper">
+          <div class="user-info">
+            <div class="avatar">
+              {{#if avatar}}
+                <div class="avatar-wrapper">
+                  <span class="avatar-image" style="background-image: url({{{avatar}}})"></span>
+                </div>
+              {{/if}}
+            </div>
+            <div class="signature">
+              <div class="signature-name">{{{first}}} {{{last}}}</div>
+              <div class="signature-city-state">
+              {{{city}}}
+              {{#if state}}
+                {{#if city}}
+                  ,
+                {{/if}}
+              {{/if}}
+              {{#if city}}
+                {{state}}
+              {{else}}
+                {{state_full}}
+              {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sitelink-text regular">Find your CITY'S grade at www.ridescore.org</div>
+    </div>
+  </div>
+  {{{scripts}}}
+</body>
+</html>
