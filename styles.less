@@ -98,12 +98,24 @@ body.thanks {
   position: absolute;
   width: 210px;
   height: 210px;
+  z-index: 10;
+}
+
+.help .legislator-image .image-overlay,
+.thanks .legislator-image .image-overlay {
   bottom: -40px;
   left: -40px;
-  z-index: 10;
   -webkit-transform: rotate(-10deg);
      -moz-transform: rotate(-10deg);
           transform: rotate(-10deg);
+}
+
+.hostile .legislator-image .image-overlay {
+  bottom: -55px;
+  right: -20px;
+  -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .image-overlay img.grade {
