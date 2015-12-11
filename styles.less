@@ -96,33 +96,19 @@ body.thanks {
 .help .legislator-image .image-overlay,
 .thanks .legislator-image .image-overlay {
   position: absolute;
-  width: 180px;
-  height: 180px;
-  bottom: 0;
-  right: 0;
+  width: 210px;
+  height: 210px;
+  bottom: -40px;
+  left: -40px;
   z-index: 10;
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
-.hostile .image-overlay img.grade {
+.image-overlay img.grade {
   position: absolute;
-  bottom: 17px;
-  left: 0px;
-  right: 0px;
-  margin-left: 75px;
-}
-.help .image-overlay img.grade {
-  position: absolute;
-  bottom: 17px;
-  left: 0px;
-  right: 0px;
-  margin: 0 40px 0 25px;
-}
-.thanks .image-overlay img.grade {
-  position: absolute;
-  bottom: 17px;
-  left: 0px;
-  right: 0px;
-  margin-left: 20px;
+  width: 100%
 }
 
 .hostile .content-wrapper {
