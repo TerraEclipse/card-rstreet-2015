@@ -4,7 +4,7 @@ var fs = require('fs')
 var variants = JSON.parse(fs.readFileSync('./variants.json'))
   , json_data = ''
   , card = {
-      title: 'R Street',
+      title: 'Ridescore 2015',
       description: 'R Street Campaign 2015',
       typekit: true,
       sizes: {
