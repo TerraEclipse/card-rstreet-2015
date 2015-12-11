@@ -40,7 +40,7 @@ _.each(variants.options, function(option) {
             name: option.target.name,
             last: option.target.last,
             twitter: option.target.twitter,
-            image: './images/' + option.target.image
+            image: '/images/' + option.target.image
           }
         }
       }
